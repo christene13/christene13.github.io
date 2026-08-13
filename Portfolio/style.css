@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================================
+   GLOBAL RESETS & BASE STYLES
+   =================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf0f2;
+    color: #4a343b;
+    line-height: 1.6;
+}
+
+/* ===================================================
+   NAVBAR (Clean Light Pink)
+   =================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(253, 242, 244, 0.92);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(216, 164, 177, 0.3);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6b4452;
+}
+
+.logo span {
+    color: #b56576;
+}
+
+.nav-links a {
+    font-size: 1rem;
+    color: #6b4452;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #b56576;
+}
+
+.btn-cta {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 24px;
+    background: #b56576;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #8d4857;
+    box-shadow: 0 4px 12px rgba(181, 101, 118, 0.3);
+}
+
+/* ===================================================
+   HERO / HOME SECTION (Muted Mauve Pink)
+   =================================================== */
+.hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8% 60px;
+    background-color: #d8a4b1;
+    color: #3d222b;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap-reverse;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.greeting {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #723b4a;
+    font-weight: 600;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #4a212e;
+}
+
+.hero-content h1 span {
+    color: #ffffff;
+}
+
+.hero-content h3 {
+    font-size: 1.3rem;
+    color: #683846;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #4a212e;
+    margin-bottom: 30px;
+}
+
+/* Profile Picture Frame */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    padding: 8px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(114, 59, 74, 0.2);
+}
+
+.hero-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.cta-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 26px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #6b2d3e;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #4a1f2b;
+}
+
+.btn-secondary {
+    background: #ffffff;
+    color: #6b2d3e;
+}
+
+.btn-secondary:hover {
+    background: #fbf0f2;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #6b2d3e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.social-links a:hover {
+    background: #6b2d3e;
+    color: #ffffff;
+}
+
+/* ===================================================
+   ABOUT ME SECTION (Soft Off-White Pink)
+   =================================================== */
+.about-section {
+    padding: 70px 8%;
+    background-color: #faf0f2;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title-left {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #6b2d3e;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    color: #523b42;
+    line-height: 1.8;
+}
+
+.about-details-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(181, 101, 118, 0.2);
+    border-bottom: 1px solid rgba(181, 101, 118, 0.2);
+}
+
+.info-group p {
+    font-size: 0.95rem;
+    color: #4a343b;
+    margin-bottom: 10px;
+}
+
+.info-group p span {
+    color: #b56576;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.about-skills h4 {
+    font-size: 1.1rem;
+    color: #6b2d3e;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.skills-inline {
+    font-size: 0.95rem;
+    color: #8d4857;
+    font-weight: 500;
+}
+
+/* ===================================================
+   COURSE ACTIVITIES SECTION (Soft Dusty Rose)
+   =================================================== */
+.activities-section {
+    padding: 70px 8%;
+    background-color: #e8c5ce;
+}
+
+.main-activities-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #5c2332;
+    margin-bottom: 1.5rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activity-grid {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    flex: 1;
+    min-width: 240px;
+    background: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(92, 35, 50, 0.05);
+}
+
+.activity-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(92, 35, 50, 0.12);
+}
+
+.activity-card.active {
+    border-color: #b56576;
+    background: #fff8f9;
+}
+
+.activity-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #5c2332;
+    margin-bottom: 6px;
+}
+
+.activity-card p {
+    font-size: 0.9rem;
+    color: #8d4857;
+}
+
+/* Hide/Show Project Preview Dynamic Control */
+.project-content {
+    display: none;
+}
+
+.project-content.active {
+    display: block;
+}
+
+/* Perfect iFrame Container Fix */
+.activity-preview-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(92, 35, 50, 0.15);
+    overflow: hidden;
+    padding-top: 50px; /* Top spacing for button */
+}
+
+.project-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+    background: #ffffff;
+}
+
+.external-link-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #6b2d3e;
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.external-link-btn:hover {
+    background: #b56576;
+}
+
+/* ===================================================
+   FOOTER SECTION (Clean Light Pink)
+   =================================================== */
+.footer-section {
+    background-color: #fdf2f4;
+    padding: 40px 8%;
+    text-align: center;
+    border-top: 1px solid rgba(216, 164, 177, 0.3);
+}
+
+.footer-content h3 {
+    color: #6b2d3e;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.footer-content p {
+    color: #724e58;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8rem !important;
+    color: #a37c87;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN (Mobile & Tablet Adjustments)
+   =================================================== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .hero-section {
+        padding: 100px 5% 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-image-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+
+    .project-iframe {
+        height: 450px;
+    }
+}
